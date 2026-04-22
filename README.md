@@ -139,7 +139,7 @@ Una vez ejecutado el servidor, puedes acceder a:
 
 ## Autor
 
-* Jose Pacarap
+* Jose Pacara
 * Universidad Nacional Mayor de San Marcos (UNMSM)
 
 ---

@@ -12,7 +12,7 @@ class LecturaCreate(BaseModel):
     estacion_id: int
     valor: float
 
-# RETO FINAL LAB 4.3: Esquema para el Dashboard de Auditoría
+# Esquema para el Dashboard de Auditoría
 class StatsResumen(BaseModel):
     total_estaciones: int
     total_lecturas: int
