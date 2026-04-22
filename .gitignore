@@ -1,0 +1,9 @@
+venv/
+env/
+.venv/
+venvbinactivate/
+venv.venvScriptsactivate/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
