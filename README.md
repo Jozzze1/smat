@@ -43,27 +43,20 @@ Permite registrar estaciones, capturar lecturas y analizar niveles de riesgo.
 
 ## Instalación y ejecución
 
-1. Clonar el repositorio:
-
-```bash
-git clone <URL_DEL_REPO>
-cd smat
-```
-
-2. Crear entorno virtual:
+1. Crear entorno virtual:
 
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
-3. Instalar dependencias:
+2. Instalar dependencias:
 
 ```bash
 pip install fastapi uvicorn sqlalchemy
 ```
 
-4. Ejecutar el servidor:
+3. Ejecutar el servidor:
 
 ```bash
 uvicorn main:app --reload
