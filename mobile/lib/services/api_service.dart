@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/estacion.dart';
 
 class ApiService {
-  final String baseUrl = "http://localhost:8000";
+  final String baseUrl = "http://192.168.121.46:8000";
 
   Future<List<Estacion>> fetchEstaciones() async {
     final response = await http.get(

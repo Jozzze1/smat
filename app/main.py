@@ -73,3 +73,9 @@ def obtener_historial(id: int, db: Session = Depends(get_db)):
     conteo = len(valores)
     promedio = sum(valores) / conteo if conteo > 0 else 0.0
     return {"estacion_id": id, "lecturas": valores, "conteo": conteo, "promedio": promedio}
+
+@app.get("/estaciones/")
+def test():
+    return [
+        {"id": 1, "nombre": "TEST", "ubicacion": "OK"}
+    ]
