@@ -1,5 +1,6 @@
+from . import models
 from sqlalchemy.orm import Session
-from . import models, schemas
+from . import schemas
 
 # Crear Estación
 def crear_estacion(db: Session, estacion: schemas.EstacionCreate):

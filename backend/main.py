@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-import models
-from database import engine, get_db
+import backend.models as models
+from backend.database import engine, get_db
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -19,7 +19,7 @@ app = FastAPI(
     version="1.0.0",
     contact={
         "name": "Soporte Técnico SMAT - FISI",
-        "email": "juan.matiasl@unmsm.edu.pe", 
+        "email": "jose.pacarap@unmsm.edu.pe", 
     }
 )
 

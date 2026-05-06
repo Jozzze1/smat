@@ -1,8 +1,9 @@
 # Importación de FastAPI, dependencias, base de datos y módulos internos del proyecto
+from . import crud, models
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from . import models, schemas, crud
+from . import schemas
 from .database import engine, get_db
 from .auth import crear_token_acceso, obtener_identidad_actual
 
